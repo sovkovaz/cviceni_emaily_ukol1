@@ -6,38 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
   <title>E-maily</title>
+  <script type="module" src="index.js"></script>
 </head>
 
 <body>
   <div id="app" class="container">
     <h1>Příchozí pošta</h1>
 
-    <div id="inbox" class="inbox">
-      <h2>Nepřečtené</h2>
+      <section class="inbox">
+        <h2>Nepřečtená pošta</h2>
+        <div class="emails" id="unread"></div>
+      </section>
 
-      <div class="email">
-        <div class="email__head">
-          <button class="email__icon email__icon--closed"></button>
-          <div class="email__info">
-            <div class="email__sender">Pavel Chocholouš</div>
-            <div class="email__subject">Jak to jde?</div>
-          </div>
-          <div class="email__time">12:35</div>
-        </div>
-        <div class="email__body"></div>
-      </div>
-
-      <div class="email">
-        <div class="email__head">
-          <button class="email__icon email__icon--closed"></button>
-          <div class="email__info">
-            <div class="email__sender">Finanční úřad</div>
-            <div class="email__subject">Daňové přiznání</div>
-          </div>
-          <div class="email__time">9:05</div>
-        </div>
-        <div class="email__body"></div>
-      </div>
+      <section class="inbox">
+        <h2>Přečtená pošta</h2>
+        <div class="emails" id="read"></div>
+      </section>
     </div>
   </div>
 </body>
